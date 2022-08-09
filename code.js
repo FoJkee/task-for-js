@@ -1,4 +1,3 @@
-//Build myStr over several lines by concatenating these two strings: This is the first sentence. and This is the second sentence. using the += operator. Use the += operator similar to how it is shown in the example and be sure to include a space between the two strings. Start by assigning the first string to myStr, then add on the second string.//
+// Вычесть одно число из другого с помощью JavaScrip. Мы также можем вычесть одно число из другого. JavaScript использует -символ для вычитания //
 
-let myStr = 'This is the first sentence. '
-myStr += 'This is the second sentence.'
+const difference = 45 - 33

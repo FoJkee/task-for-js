@@ -1,4 +1,15 @@
-// ourStr would have a value of the string Hello, our name is freeCodeCamp, how are you?. Set myName to a string equal to your name and build myStr with myName between the strings My name is and and I am well! //
+/* Appending Variables to Strings
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
 
-const myName = 'Viktor'
-const myStr = 'My name is ' + myName + 'I am well!'
+Example:
+
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+ourStr would have the value freeCodeCamp is awesome!.
+
+Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator. */
+
+const someAdjective = 'fun'
+let myStr = 'Learning to code is '
+myStr += someAdjective

@@ -1,11 +1,19 @@
-/* You are given two interior angles (in degrees) of a triangle.
+/* Access Array Data with Indexes
+We can access the data inside arrays using indexes.
 
-Write a function to return the 3rd.
+Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing, so the first element in an array has an index of 0.
 
-Note: only positive integers will be tested.
+
+Example
+
+const array = [50, 60, 70];
+console.log(array[0]);
+const data = array[1];
+The console.log(array[0]) prints 50, and data has the value 60.
+
+Create a variable called myData and set it to equal the first value of myArray using bracket notation.
 
  */
 
-function otherAngle(a, b) {
-  return (c = 180 - a - b)
-}
+const myArray = [50, 60, 70]
+const myData = myArray[0]

@@ -1,17 +1,11 @@
-/* Modify Array Data With Indexes
-Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.
+/* All of the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and end with the same letters as the animal's name. For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
 
-Example
+Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
 
-const ourArray = [50, 40, 30];
-ourArray[0] = 15;
-ourArray now has the value [15, 40, 30].
-
-Note: There shouldn't be any spaces between the array name and the square brackets, like array [0]. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
-
-Modify the data stored at index 0 of myArray to a value of 45.
+Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.
 
  */
 
-const myArray = [18, 64, 99]
-myArray[0] = 45
+function feast(beast, dish) {
+  return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1)
+}

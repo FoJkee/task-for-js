@@ -1,12 +1,21 @@
-/* Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+/* Use Bracket Notation to Find the Last Character in a String
+In order to get the last letter of a string, you can subtract one from the string's length.
 
-Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+For example, if const firstName = "Ada", you can get the value of the last letter of the string by using firstName[firstName.length - 1].
+
+Example:
+
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLetter would have a value of the string a.
+
+Use bracket notation to find the last character in the lastName variable.
+
+Hint: Try looking at the example above if you get stuck.
  */
 
-function paperwork(n, m) {
-  if (n < 0 || m < 0) {
-    return 0
-  } else {
-    return n * m
-  }
-}
+// Setup
+const lastName = 'Lovelace'
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1] // Change this line

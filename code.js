@@ -1,20 +1,12 @@
-/* A square of squares
-You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
+/* You get an array of numbers, return the sum of all of the positives ones.
 
-However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! That's it! You just have to check if your number of building blocks is a perfect square.
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
 
-Task
-Given an integral number, determine if it's a square number:
+Note: if there is nothing to sum, the sum is default to 0.
 
-In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
 
-The tests will always use some integral number, so don't worry about that in dynamic typed languages.
  */
 
-var isSquare = function (n) {
-  if (Math.sqrt(n) % 1 == 0) {
-    return true
-  } else {
-    return false
-  }
+function positiveSum(arr) {
+  return arr.filter((x) => x > 0).reduce((sum, current) => sum + current, 0)
 }

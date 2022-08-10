@@ -1,11 +1,12 @@
-/* The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+/* Nest one Array within Another Array
+You can also nest arrays within other arrays, like below:
 
-For example:
+const teams = [["Bulls", 23], ["White Sox", 45]];
+This is also called a multi-dimensional array.
 
-1.08 --> 30
-Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+Create a nested array called myArray.
+
+
  */
 
-function cockroachSpeed(s) {
-  return Math.floor((s * 100000) / 3600)
-}
+const myArray = [[]]

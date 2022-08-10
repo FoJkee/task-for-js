@@ -1,5 +1,10 @@
-// Code as fast as you can! You need to double the integer and return it.//
+/* Note: This kata is inspired by Convert a Number to a String!. Try that one too.
 
-function doubleInteger(i) {
-  return (i *= 2)
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.*/
+
+const stringToNumber = function (str) {
+  return Number(str)
 }

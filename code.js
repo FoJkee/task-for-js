@@ -1,12 +1,11 @@
-/* Nest one Array within Another Array
-You can also nest arrays within other arrays, like below:
+/* You are given two interior angles (in degrees) of a triangle.
 
-const teams = [["Bulls", 23], ["White Sox", 45]];
-This is also called a multi-dimensional array.
+Write a function to return the 3rd.
 
-Create a nested array called myArray.
-
+Note: only positive integers will be tested.
 
  */
 
-const myArray = [[]]
+function otherAngle(a, b) {
+  return (c = 180 - a - b)
+}

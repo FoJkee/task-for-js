@@ -1,10 +1,11 @@
-/* Store Multiple Values in one Variable using JavaScript Arrays
-With JavaScript array variables, we can store several pieces of data in one place.
+/* The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 
-You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
+For example:
 
-const sandwich = ["peanut butter", "jelly", "bread"];
-Modify the new array myArray so that it contains both a string and a number (in that order).
+1.08 --> 30
+Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
  */
 
-const myArray = ['', 2]
+function cockroachSpeed(s) {
+  return Math.floor((s * 100000) / 3600)
+}

@@ -1,29 +1,32 @@
-/* Global Scope and Functions
-In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+/* Local Scope and Functions
+Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
 
-Variables which are declared without the let or const keywords are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with let or const.
+Here is a function myTest with a local variable called loc.
 
-Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+function myTest() {
+  const loc = "foo";
+  console.log(loc);
+}
 
-Inside function fun1, assign 5 to oopsGlobal without using the var, let or const keywords.
+myTest();
+console.log(loc);
+The myTest() function call will display the string foo in the console. The console.log(loc) line (outside of the myTest function) will throw an error, as loc is not defined outside of the function.
+
+The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
+
+Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
 
 
  */
 
-const myGlobal = 10
-function fun1() {
-  oopsGlobal = 5
-}
+function myLocalScope() {
+  let myLocalScope
+  let myVar
 
-// Only change code above this line
-
-function fun2() {
-  var output = ''
-  if (typeof myGlobal != 'undefined') {
-    output += 'myGlobal: ' + myGlobal
-  }
-  if (typeof oopsGlobal != 'undefined') {
-    output += ' oopsGlobal: ' + oopsGlobal
-  }
-  console.log(output)
+  console.log('inside myLocalScope', myVar)
 }
+myLocalScope()
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar)

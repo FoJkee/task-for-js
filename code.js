@@ -1,41 +1,33 @@
-/* Use Conditional Logic with If Statements
-if statements are used to make decisions in code. The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
+/* Сравнение с оператором равенства
+В JavaScript есть много операторов сравнения . Все эти операторы возвращают логическое значение trueили falseзначение.
 
-When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
+Самый простой оператор — это оператор равенства ==. Оператор равенства сравнивает два значения и возвращает true, эквивалентны falseони или нет. Обратите внимание, что равенство отличается от присваивания ( =), которое присваивает значение справа от оператора переменной слева.
 
-Pseudocode
-
-if (condition is true) {
-  statement is executed
-}
-Example
-
-function test (myCondition) {
-  if (myCondition) {
-    return "It was true";
+function equalityTest(myVal) {
+  if (myVal == 10) {
+    return "Equal";
   }
-  return "It was false";
+  return "Not Equal";
 }
+Если myValравно 10, оператор равенства возвращает true, поэтому код в фигурных скобках будет выполнен, и функция вернет значение Equal. В противном случае функция вернется Not Equal. Чтобы JavaScript мог сравнить два разных типа данных (например, numbersи strings), он должен преобразовать один тип в другой. Это известно как принуждение типа. Однако, как только это произойдет, он может сравнивать термины следующим образом:
 
-test(true);
-test(false);
-test(true) returns the string It was true, and test(false) returns the string It was false.
-
-When test is called with a value of true, the if statement evaluates myCondition to see if it is true or not. Since it is true, the function returns It was true. When we call test with a value of false, myCondition is not true and the statement in the curly braces is not executed and the function returns It was false.
-
-Create an if statement inside the function to return Yes, that was true if the parameter wasThatTrue is true and return No, that was false otherwise.
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+Добавьте в указанную строку оператор равенства, чтобы функция возвращала строку , Equalкогда valона эквивалентна 12.
 
 
 
 
  */
 
-function trueOrFalse(wasThatTrue) {
-  if (wasThatTrue) {
-    return 'Yes, that was true'
-  } else {
-    return 'No, that was false'
+function testEqual(val) {
+  if (val == 12) {
+    // Change this line
+    return 'Equal'
   }
+  return 'Not Equal'
 }
-trueOrFalse(true)
-trueOrFalse(false)
+
+testEqual(10)

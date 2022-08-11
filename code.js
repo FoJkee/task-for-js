@@ -1,6 +1,6 @@
-/* Simple, remove the spaces from the string, then return the resultant string.
+/* We need a function that can transform a number (integer) into a string.
  */
 
-function noSpace(x) {
-  return x.split(' ').join('')
+function numberToString(num) {
+  return String(num)
 }

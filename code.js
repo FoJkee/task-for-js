@@ -1,32 +1,28 @@
-/* Local Scope and Functions
-Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
+/* Global vs. Local Scope in Functions
+It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
 
-Here is a function myTest with a local variable called loc.
+In this example:
 
-function myTest() {
-  const loc = "foo";
-  console.log(loc);
+const someVar = "Hat";
+
+function myFun() {
+  const someVar = "Head";
+  return someVar;
 }
+The function myFun will return the string Head because the local version of the variable is present.
 
-myTest();
-console.log(loc);
-The myTest() function call will display the string foo in the console. The console.log(loc) line (outside of the myTest function) will throw an error, as loc is not defined outside of the function.
+Add a local variable to myOutfit function to override the value of outerWear with the string sweater.
 
-The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
 
-Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
 
 
  */
 
-function myLocalScope() {
-  let myLocalScope
-  let myVar
+const outerWear = 'T-Shirt'
 
-  console.log('inside myLocalScope', myVar)
+function myOutfit() {
+  const outerWear = 'sweater'
+  return outerWear
 }
-myLocalScope()
 
-// Run and check the console
-// myVar is not defined outside of myLocalScope
-console.log('outside myLocalScope', myVar)
+myOutfit()

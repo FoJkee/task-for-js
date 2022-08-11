@@ -1,7 +1,12 @@
-/* Very simple, given an integer or a floating-point number, find its opposite.
+/* Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 
  */
 
-function opposite(number) {
-  return Number(-number)
+function boolToWord(bool) {
+  if (bool == true) {
+    return 'Yes'
+  } else {
+    return 'No'
+  }
+  return bool
 }

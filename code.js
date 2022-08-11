@@ -1,14 +1,8 @@
-/* Функция compareEqualityв редакторе сравнивает два значения с помощью оператора равенства. Измените функцию, чтобы она возвращала строку Equalтолько тогда, когда значения строго равны.
-
-
+/* Найдите наименьшее целое число в массиве
  */
 
-function compareEquality(a, b) {
-  if (a === b) {
-    // Change this line
-    return 'Equal'
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min.apply(null, args)
   }
-  return 'Not Equal'
 }
-
-compareEquality(10, '10')

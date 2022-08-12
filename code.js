@@ -1,15 +1,15 @@
-/* Замените два оператора if одним оператором, используя &&оператор, который вернет строку Yes, если valменьше или равно 50и больше или равно 25. В противном случае будет возвращена строка No.
+/* Объедините два ifоператора в один оператор, который возвращает строку Outside, если valона не находится между 10и 20включительно. В противном случае вернуть строку Inside.
  */
 
-function testLogicalAnd(val) {
+function testLogicalOr(val) {
   // Only change code below this line
 
-  if (25 <= val && val <= 50) {
-    return 'Yes'
+  if (val < 10 || val > 20) {
+    return 'Outside'
   }
 
   // Only change code above this line
-  return 'No'
+  return 'Inside'
 }
 
-testLogicalAnd(10)
+testLogicalOr(15)

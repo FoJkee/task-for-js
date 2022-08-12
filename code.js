@@ -1,27 +1,31 @@
-/* Напишите оператор switch, который проверяет valи устанавливает answerследующие условия:
-1- alpha
-2- beta
-3- gamma
-4-delta
+/* Напишите оператор switch для установки answerследующих диапазонов:
+1-3- Low
+4-6- Mid
+7-9-High
+
+Примечание. Вам потребуется caseзаявление для каждого числа в диапазоне.
  */
 
-function caseInSwitch(val) {
+function sequentialSizes(val) {
   let answer = ''
   switch (val) {
     case 1:
-      answer = 'alpha'
-      break
     case 2:
-      answer = 'beta'
-      break
     case 3:
-      answer = 'gamma'
+      answer = 'Low'
       break
     case 4:
-      answer = 'delta'
+    case 5:
+    case 6:
+      answer = 'Mid'
+      break
+    case 7:
+    case 8:
+    case 9:
+      answer = 'High'
       break
   }
   return answer
 }
 
-caseInSwitch(1)
+sequentialSizes(1)

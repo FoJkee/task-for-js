@@ -1,15 +1,18 @@
-/* Объедините два ifоператора в один оператор, который возвращает строку Outside, если valона не находится между 10и 20включительно. В противном случае вернуть строку Inside.
+/* Объедините ifутверждения в одно if/elseутверждение.
  */
 
-function testLogicalOr(val) {
+function testElse(val) {
+  let result = ''
   // Only change code below this line
 
-  if (val < 10 || val > 20) {
-    return 'Outside'
+  if (val > 5) {
+    result = 'Bigger than 5'
+  } else {
+    result = '5 or Smaller'
   }
 
   // Only change code above this line
-  return 'Inside'
+  return result
 }
 
-testLogicalOr(15)
+testElse(4)

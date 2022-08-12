@@ -1,31 +1,56 @@
-/* Напишите оператор switch для установки answerследующих диапазонов:
-1-3- Low
-4-6- Mid
-7-9-High
+/* Замена цепочек If Else на Switch
+Если у вас есть много вариантов на выбор, switchнаписать оператор может быть проще, чем множество связанных операторов if/ . else ifСледующее:
 
-Примечание. Вам потребуется caseзаявление для каждого числа в диапазоне.
+if (val === 1) {
+  answer = "a";
+} else if (val === 2) {
+  answer = "b";
+} else {
+  answer = "c";
+}
+можно заменить на:
+
+switch (val) {
+  case 1:
+    answer = "a";
+    break;
+  case 2:
+    answer = "b";
+    break;
+  default:
+    answer = "c";
+}
+Измените связанные операторы if/ else ifна switchоператор
  */
 
-function sequentialSizes(val) {
+function chainToSwitch(val) {
   let answer = ''
+  // Only change code below this line
+
   switch (val) {
-    case 1:
-    case 2:
-    case 3:
-      answer = 'Low'
+    case 'bob':
+      answer = 'Marley'
       break
-    case 4:
-    case 5:
-    case 6:
-      answer = 'Mid'
+    case 42:
+      answer = 'The Answer'
+      break
+    case 1:
+      answer = 'There is no #1'
+      break
+    case 99:
+      answer = 'Missed me by this much!'
       break
     case 7:
-    case 8:
-    case 9:
-      answer = 'High'
+      answer = 'Ate Nine'
+      break
+    case 'John':
+    case 156:
+      answer = ''
       break
   }
+
+  // Only change code above this line
   return answer
 }
 
-sequentialSizes(1)
+chainToSwitch(7)

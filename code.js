@@ -1,28 +1,15 @@
-/* Сравнение с оператором меньше или равно
-Оператор меньше или равно ( <=) сравнивает значения двух чисел. Если число слева меньше или равно числу справа, возвращается true. Если число слева больше числа справа, возвращается false. Как и оператор равенства, оператор меньше или равно преобразует типы данных.
-
-Примеры
-
-4   <= 5 // true
-'7' <= 7 // true
-5   <= 5 // true
-3   <= 2 // false
-'8' <= 4 // false
-Добавьте оператор меньше или равно к указанным строкам, чтобы операторы return имели смысл.
+/* Замените два оператора if одним оператором, используя &&оператор, который вернет строку Yes, если valменьше или равно 50и больше или равно 25. В противном случае будет возвращена строка No.
  */
 
-function testLessOrEqual(val) {
-  if (val <= 12) {
-    // Change this line
-    return 'Smaller Than or Equal to 12'
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (25 <= val && val <= 50) {
+    return 'Yes'
   }
 
-  if (val <= 24) {
-    // Change this line
-    return 'Smaller Than or Equal to 24'
-  }
-
-  return 'More Than 24'
+  // Only change code above this line
+  return 'No'
 }
 
-testLessOrEqual(10)
+testLogicalAnd(10)

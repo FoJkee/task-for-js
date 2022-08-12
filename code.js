@@ -1,14 +1,27 @@
-/* Измените порядок логики в функции, чтобы она возвращала правильные операторы во всех случаях.
+/* Напишите цепочку операторов if/ else if, чтобы выполнить следующие условия:
+
+num < 5- вернуться Tiny
+num < 10- вернуться Small
+num < 15- вернуться Medium
+num < 20- вернуться Large
+num >= 20- вернутьсяHuge
  */
 
-function orderMyLogic(val) {
-  if (val < 5) {
-    return 'Less than 5'
-  } else if (val < 10) {
-    return 'Less than 10'
-  } else {
-    return 'Greater than or equal to 10'
+function testSize(num) {
+  if (num < 5) {
+    return 'Tiny'
+  } else if (num < 10) {
+    return 'Small'
+  } else if (num < 15) {
+    return 'Medium'
+  } else if (num < 20) {
+    return 'Large'
+  } else if (num >= 20) {
+    return 'Huge'
   }
+
+  return 'Change Me'
+  // Only change code above this line
 }
 
-orderMyLogic(7)
+testSize(7)

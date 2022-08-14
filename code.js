@@ -1,10 +1,7 @@
-/* Given an array of integers, return a new array with each value doubled.
-
-For example:
-
-[1, 2, 3] --> [2, 4, 6]
+/* Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
  */
 
-function maps(x) {
-  return x.map((x) => x * 2)
+function digitize(n) {
+  return Array.from(String(n), Number).reverse()
 }

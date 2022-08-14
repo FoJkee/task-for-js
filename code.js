@@ -1,11 +1,10 @@
-/* Make an object that represents a dog called myDog which contains the properties name (a string), legs, tails and friends.
-
-You can set these object properties to whatever values you want, as long as name is a string, legs and tails are numbers, and friends is an array.
+/* Напишите программу, которая находит сумму всех чисел от 1 до num. Число всегда будет положительным целым числом больше 0.
  */
 
-const myDog = {
-  name: 'Kit',
-  legs: 4,
-  tails: 10,
-  friends: [],
+var summation = function (num) {
+  let sum = 0
+  for (let i = 1; i <= num; i++) {
+    sum += i
+  }
+  return sum
 }

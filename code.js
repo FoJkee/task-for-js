@@ -1,9 +1,10 @@
-/* Создайте функцию, которая проверяет, nделится ли число на два числа x AND y . Все входные данные являются положительными, ненулевыми цифрами.
+/* Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
  */
 
-function isDivisible(n, x, y) {
-  if (n % x == 0 && n % y == 0) {
-    return true
-  }
-  return false
+function maps(x) {
+  return x.map((x) => x * 2)
 }

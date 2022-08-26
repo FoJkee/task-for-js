@@ -1,13 +1,13 @@
-/* Обновите myDogсвойство имени объекта. Давайте изменим ее имя с Coderна Happy Coder. Вы можете использовать либо точку, либо квадратную нотацию.
+/* Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
+
 
 
  */
 
 const myDog = {
-  name: 'Coder',
+  name: 'Happy Coder',
   legs: 4,
   tails: 1,
   friends: ['freeCodeCamp Campers'],
 }
-
-myDog.name = 'Happy Coder'
+myDog.bark = 'woof'

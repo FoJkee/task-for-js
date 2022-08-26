@@ -1,7 +1,12 @@
-/* Convert number to reversed array of digits
-Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+/* Считайте значения свойств с testObjпомощью записи через точку. Установите переменную hatValueравной свойству объекта hatи установите переменную shirtValueравной свойству объекта shirt.
  */
 
-function digitize(n) {
-  return Array.from(String(n), Number).reverse()
+const testObj = {
+  hat: 'ballcap',
+  shirt: 'jersey',
+  shoes: 'cleats',
 }
+
+// Only change code below this line
+const hatValue = testObj.hat // Change this line
+const shirtValue = testObj.shirt // Chang

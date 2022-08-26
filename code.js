@@ -1,13 +1,13 @@
-/* Установите playerNumberпеременную в 16. Затем используйте переменную, чтобы найти имя игрока и присвоить его player.
+/* Обновите myDogсвойство имени объекта. Давайте изменим ее имя с Coderна Happy Coder. Вы можете использовать либо точку, либо квадратную нотацию.
+
+
  */
 
-const testObj = {
-  12: 'Namath',
-  16: 'Montana',
-  19: 'Unitas',
+const myDog = {
+  name: 'Coder',
+  legs: 4,
+  tails: 1,
+  friends: ['freeCodeCamp Campers'],
 }
-;('this is the new test branch')
-// Only change code below this line
-const playerNumber = 16 // Change this line
-const player = testObj[playerNumber]
-console.log(player) // Change this line
+
+myDog.name = 'Happy Coder'

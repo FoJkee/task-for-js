@@ -1,13 +1,13 @@
-/* Прочитайте значения свойств an entreeи the drinkиспользования testObjскобочной нотации и присвойте их соответственно entreeValueи drinkValue.
-
-
+/* Установите playerNumberпеременную в 16. Затем используйте переменную, чтобы найти имя игрока и присвоить его player.
  */
-const testObj = {
-  'an entree': 'hamburger',
-  'my side': 'veggies',
-  'the drink': 'water',
-}
 
+const testObj = {
+  12: 'Namath',
+  16: 'Montana',
+  19: 'Unitas',
+}
+;('this is the new test branch')
 // Only change code below this line
-const entreeValue = testObj['an entree'] // Change this line
-const drinkValue = testObj['the drink']
+const playerNumber = 16 // Change this line
+const player = testObj[playerNumber]
+console.log(player) // Change this line

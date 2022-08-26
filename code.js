@@ -1,6 +1,4 @@
-/* Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
-
-
+/* Удалить tailsсвойство из myDog. Вы можете использовать либо точку, либо квадратную нотацию
 
  */
 
@@ -9,5 +7,8 @@ const myDog = {
   legs: 4,
   tails: 1,
   friends: ['freeCodeCamp Campers'],
+  bark: 'woof',
 }
-myDog.bark = 'woof'
+
+// Only change code below this line
+delete myDog.tails

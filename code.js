@@ -1,20 +1,6 @@
-/* В этом задании вы будете использовать Object.freeze для предотвращения изменения математических констант. Вам нужно заморозить MATH_CONSTANTSобъект, чтобы никто не мог изменить значение PI, добавить или удалить свойства.
+/* Перепишите функцию, назначенную переменной magic, которая возвращает a, new Date()чтобы использовать синтаксис стрелочной функции. Кроме того, убедитесь, что ничего не определено с использованием ключевого слова var.
 
 
  */
 
-function freezeObj() {
-    const MATH_CONSTANTS = {
-        PI: 3.14,
-    };
-    Object.freeze(MATH_CONSTANTS);
-    try {
-        MATH_CONSTANTS.PI = 99;
-    } catch (ex) {
-        console.log(ex);
-    }
-
-    return MATH_CONSTANTS.PI;
-}
-
-const PI = freezeObj();
+const magic = () => new Date();

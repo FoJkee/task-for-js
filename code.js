@@ -1,18 +1,13 @@
 /* 
-Исправьте условие, чтобы программа выполняла правильную ветвь, а соответствующее значение было присвоено result.
-
-
+Исправьте код, чтобы для переменной resultбыло установлено значение, возвращаемое при вызове функции getNine.
 
  */
 
-let x = 7;
-let y = 9;
-let result = 'to come';
-
-if (x == y) {
-    result = 'Equal!';
-} else {
-    result = 'Not equal!';
+function getNine() {
+    let x = 6;
+    let y = 3;
+    return x + y;
 }
 
+let result = getNine();
 console.log(result);

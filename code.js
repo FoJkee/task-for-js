@@ -1,9 +1,18 @@
 /* 
-Исправьте строку, чтобы она либо использовала другие кавычки для href значения, либо экранировала существующие. Держите двойные кавычки вокруг всей строки.
+Исправьте условие, чтобы программа выполняла правильную ветвь, а соответствующее значение было присвоено result.
 
 
 
  */
 
-let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
-console.log(innerHtml);
+let x = 7;
+let y = 9;
+let result = 'to come';
+
+if (x == y) {
+    result = 'Equal!';
+} else {
+    result = 'Not equal!';
+}
+
+console.log(result);

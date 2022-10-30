@@ -1,8 +1,5 @@
-/* Перепишите myConcatфункцию, которая добавляет содержимое arr2к arr1, чтобы она использовала синтаксис стрелочной функции.
-
+/* Измените функцию increment, добавив параметры по умолчанию, чтобы она добавляла 1, numberесли valueне указано.
 
  */
 
-const myConcat = (arr1, arr2) => arr1.concat(arr2);
-
-console.log(myConcat([1, 2], [3, 4, 5]));
+const increment = (number, value = 1) => number + value;

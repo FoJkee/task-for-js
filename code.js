@@ -1,14 +1,20 @@
-/* Массив объявляется как const s = [5, 7, 2]. Измените массив на [2, 5, 7]использование различных назначений элементов.
-
+/* В этом задании вы будете использовать Object.freeze для предотвращения изменения математических констант. Вам нужно заморозить MATH_CONSTANTSобъект, чтобы никто не мог изменить значение PI, добавить или удалить свойства.
 
 
  */
 
-const s = [5, 7, 2];
-function editInPlace() {
-    'use strict';
-    s[0] = 2;
-    s[1] = 5;
-    s[2] = 7;
+function freezeObj() {
+    const MATH_CONSTANTS = {
+        PI: 3.14,
+    };
+    Object.freeze(MATH_CONSTANTS);
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch (ex) {
+        console.log(ex);
+    }
+
+    return MATH_CONSTANTS.PI;
 }
-editInPlace();
+
+const PI = freezeObj();

@@ -1,9 +1,13 @@
-/* Скопируйте все содержимое arr1в другой массив, arr2 используя оператор распространения
+/* 
+Добавьте два console.log() оператора для проверки typeofкаждой из двух переменных sevenи threeв коде.
+
+
+
+
  */
 
-const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
-let arr2;
-
-arr2 = [...arr1];
-
-console.log(arr2);
+let seven = 7;
+let three = '3';
+console.log(seven + three);
+console.log(typeof seven);
+console.log(typeof three);

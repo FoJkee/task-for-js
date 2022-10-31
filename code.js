@@ -1,13 +1,14 @@
 /* 
-ИВведите код функции incrementer, чтобы она возвращала значение глобальной переменной fixedValue, увеличенное на единицу.
+Давайте обновим incrementerфункцию, чтобы четко объявить ее зависимости.
 
+Напишите incrementerфункцию так, чтобы она принимала аргумент, а затем возвращала результат после увеличения значения на единицу.
 
 
 */
 
 let fixedValue = 4;
 
-function incrementer() {
+// Only change code below this line
+function incrementer(fixedValue) {
     return fixedValue + 1;
 }
-incrementer();

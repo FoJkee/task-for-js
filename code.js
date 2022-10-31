@@ -1,5 +1,6 @@
 /* 
-Замените текст внутри вашего pэлемента первыми несколькими словами этого текста котенка ipsum:Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+Раскомментируйте ваши h1элементы h2и p.
+
 
 
 */

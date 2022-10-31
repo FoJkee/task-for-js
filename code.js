@@ -1,6 +1,4 @@
 /* 
-Установите placeholderзначение вашего текста inputна «URL фото кошки».
-
-
+Вложите существующий inputэлемент внутрь formэлемента и назначьте "https://www.freecatphotoapp.com/submit-cat-photo"его actionатрибуту form.
 
 */

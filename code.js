@@ -1,9 +1,14 @@
 /* 
-Создайте pэлемент ниже вашего h2элемента и присвойте ему текст Hello Paragraph.
-
-Примечание. По соглашению все теги HTML пишутся в нижнем регистре, например, <p></p>а не <P></P>.
-
+Замените текст внутри вашего pэлемента первыми несколькими словами этого текста котенка ipsum:Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
 
 
 */
-(<h1>Hello World</h1>), (<h2>CatPhotoApp</h2>), (<p>Hello Paragraph</p>);
+(<h1>Hello World</h1>),
+    (<h2>CatPhotoApp</h2>),
+    (
+        <p>
+            Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+            stretching attack your ankles chase the red dot, hairball run catnip
+            eat the grass sniff.
+        </p>
+    );

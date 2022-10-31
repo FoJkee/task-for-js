@@ -1,6 +1,7 @@
 /* 
-Удалите свой h1элемент, чтобы мы могли упростить наше представление.
+Создайте второй pэлемент со следующим текстом kitty ipsum:Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
 
+Затем создайте mainэлемент и вложите только два pэлемента внутрь mainэлемента.
 
 
 
@@ -8,9 +9,17 @@
 */
 (<h2>CatPhotoApp</h2>),
     (
-        <p>
-            Kitty ipsum dolor sit amet, shed everywhere shed everywhere
-            stretching attack your ankles chase the red dot, hairball run catnip
-            eat the grass sniff.
-        </p>
+        <main>
+            <p>
+                Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+                stretching attack your ankles chase the red dot, hairball run
+                catnip eat the grass sniff.
+            </p>
+            <p>
+                {' '}
+                Purr jump eat the grass rip the couch scratched sunbathe, shed
+                everywhere rip the couch sleep in the sink fluffy fur catnip
+                scratched.
+            </p>
+        </main>
     );

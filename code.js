@@ -1,14 +1,9 @@
 /* 
-Давайте обновим incrementerфункцию, чтобы четко объявить ее зависимости.
+Создайте pэлемент ниже вашего h2элемента и присвойте ему текст Hello Paragraph.
 
-Напишите incrementerфункцию так, чтобы она принимала аргумент, а затем возвращала результат после увеличения значения на единицу.
+Примечание. По соглашению все теги HTML пишутся в нижнем регистре, например, <p></p>а не <P></P>.
+
 
 
 */
-
-let fixedValue = 4;
-
-// Only change code below this line
-function incrementer(fixedValue) {
-    return fixedValue + 1;
-}
+(<h1>Hello World</h1>), (<h2>CatPhotoApp</h2>), (<p>Hello Paragraph</p>);

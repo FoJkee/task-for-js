@@ -1,25 +1,9 @@
 /* 
-Создайте второй pэлемент со следующим текстом kitty ipsum:Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
+В существующий mainэлемент вставьте imgэлемент перед существующими pэлементами.
 
-Затем создайте mainэлемент и вложите только два pэлемента внутрь mainэлемента.
+Теперь установите srcатрибут так, чтобы он указывал на URLhttps://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg
 
-
+Наконец, не забудьте присвоить imgэлементу altатрибут с подходящим текстом.
 
 
 */
-(<h2>CatPhotoApp</h2>),
-    (
-        <main>
-            <p>
-                Kitty ipsum dolor sit amet, shed everywhere shed everywhere
-                stretching attack your ankles chase the red dot, hairball run
-                catnip eat the grass sniff.
-            </p>
-            <p>
-                {' '}
-                Purr jump eat the grass rip the couch scratched sunbathe, shed
-                everywhere rip the couch sleep in the sink fluffy fur catnip
-                scratched.
-            </p>
-        </main>
-    );

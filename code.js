@@ -12,3 +12,12 @@ function findNeedle(haystack) {
         return `found the needle at position ${haystack.indexOf('needle')}`;
     }
 }
+
+/* 
+
+В этом случае мы уже добавили его для вас на эту страницу за кулисами. Обратите внимание, что использование либо >или />для закрытия linkтега допустимо.
+
+Для начала мы должны вложить весь наш HTML (кроме linkтега и styleэлемента) в divэлемент с классом container-fluid
+
+// Only change code below this line
+delete myDog.tails*/

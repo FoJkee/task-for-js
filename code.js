@@ -1,11 +1,10 @@
 /*
 
-Вам дадут слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, вернуть средний символ. Если длина слова четная, верните средние 2 символа.
-
+Write a function to split a string and convert it into an array of words
 
 
 */
 
-function getMiddle(s) {
-    return s.substr((s.length - 1) / 2, 2 - (s.length % 2));
+function stringToArray(string) {
+    return string.split(' ');
 }

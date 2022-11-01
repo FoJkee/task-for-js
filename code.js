@@ -8,9 +8,7 @@
 */
 
 function findNeedle(haystack) {
-    for (let i = 0; i < haystack.length; i++) {
-        if (haystack.indexOf('needle')) {
-            return `found the needle at position ${haystack.indexOf('needle')}`;
-        }
+    if (haystack.indexOf('needle')) {
+        return `found the needle at position ${haystack.indexOf('needle')}`;
     }
 }

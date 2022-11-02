@@ -1,9 +1,9 @@
 /*
 
-Создайте класс silver-backgroundс именем background-colorиз silver. Назначьте этот класс своему divэлементу.
 
 
 
+Дайте вашему formэлементу идентификатор cat-photo-form.
 
 
 

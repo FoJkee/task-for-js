@@ -1,19 +1,15 @@
 /*
 
-Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
 
-The output should be two capital letters with a dot separating them.
-
-It should look like this:
-
-Sam Harris => S.H
-
-patrick feeney => P.F
+Return True if yes, False otherwise :)
 
 */
 
-function abbrevName(name) {
-    let x = name.split(' ');
-
-    return (x[0][0] + '.' + x[1][0]).toUpperCase();
+function hero(bullets, dragons) {
+    if (bullets >= 2 * dragons) {
+        return true;
+    } else {
+        return false;
+    }
 }

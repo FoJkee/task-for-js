@@ -1,15 +1,13 @@
 /*
 
-Clock shows h hours, m minutes and s seconds after midnight.
+Is the string uppercase?
+Task
+Create a method to see whether the string is ALL CAPS.
 
-Your task is to write a function which returns the time since midnight in milliseconds
+Examples (input -> output)
 
 */
 
-function past(h, m, s) {
-    let seconds = s * 1000;
-    let minutes = m * 60 * 1000;
-    let hours = h * 60 * 60 * 1000;
-
-    return seconds + minutes + hours;
-}
+String.prototype.isUpperCase = function() {
+    return this == this.toUpperCase() ? true : false
+  }

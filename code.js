@@ -1,17 +1,19 @@
 /*
 
-Trolls are attacking your comment section!
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
-A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+The output should be two capital letters with a dot separating them.
 
-Your task is to write a function that takes a string and return a new string with all vowels removed.
+It should look like this:
 
-For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+Sam Harris => S.H
 
-Note: for this kata y isn't considered a vowel.
+patrick feeney => P.F
 
 */
 
-function disemvowel(str) {
-    return str.replace(/[aeiou]/gi, '');
+function abbrevName(name) {
+    let x = name.split(' ');
+
+    return (x[0][0] + '.' + x[1][0]).toUpperCase();
 }

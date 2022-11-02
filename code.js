@@ -1,7 +1,11 @@
 /*
 
+Создайте класс silver-backgroundс именем background-colorиз silver. Назначьте этот класс своему divэлементу.
 
-Подарите своей кошке фотографию border-radius.50%
+
+
+
+
 
 
 */

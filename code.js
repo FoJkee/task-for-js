@@ -1,13 +1,11 @@
 /*
 
-Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
-Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
-
-Create a function which translates a given DNA string into RNA.
+(In this case, all triangles must have surface greater than 0 to be accepted).
 
 */
 
-function DNAtoRNA(dna) {
-    return dna.replace(/T/g, 'U');
+function isTriangle(a, b, c) {
+    return a + b > c && a + c > b && c + b > a;
 }

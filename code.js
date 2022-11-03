@@ -1,11 +1,11 @@
 /*
 
-Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
-
-(In this case, all triangles must have surface greater than 0 to be accepted).
-
+Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
 */
 
-function isTriangle(a, b, c) {
-    return a + b > c && a + c > b && c + b > a;
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        let v = length * width * height;
+        return v;
+    }
 }

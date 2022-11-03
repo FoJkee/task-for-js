@@ -1,11 +1,20 @@
 /*
 
-Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+
+
+
+
+
+
+
+
 */
 
-class Kata {
-    static getVolumeOfCuboid(length, width, height) {
-        let v = length * width * height;
-        return v;
-    }
+function reverseWords(str) {
+    return str
+        .split(' ')
+        .map((word) => word.split('').reverse().join(''))
+        .join(' ');
 }

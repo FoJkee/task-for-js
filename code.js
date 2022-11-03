@@ -1,19 +1,16 @@
 /*
 
-
-
-
-This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
-
+You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter.
 
 
 
 */
 
-function simpleMultiplication(number) {
-    if (number % 2 == 0) {
-        return number * 8;
+const areaOrPerimeter = function (l, w) {
+    if (l == w) {
+        return l * w;
     } else {
-        return number * 9;
+        return (l + w) * 2;
     }
-}
+};

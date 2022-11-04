@@ -1,6 +1,5 @@
 /*
 
-В penguinклассе измените blackзначение на gray, grayзначение на white, а yellowзначение на orange.
-
+В penguinклассе создайте имя переменной --penguin-skinи присвойте ей значение gray.
 
 */

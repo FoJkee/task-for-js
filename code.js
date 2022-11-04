@@ -1,5 +1,5 @@
 /*
 
-В penguinклассе создайте имя переменной --penguin-skinи присвойте ей значение gray.
+Примените --penguin-skinпеременную к backgroundсвойству классов penguin-top, penguin-bottomи .right-handleft-hand
 
 */

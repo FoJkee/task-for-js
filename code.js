@@ -1,7 +1,5 @@
 /*
-Using the type attribute selector, try to give the checkboxes in CatPhotoApp a top margin of 10px and a bottom margin of 15px.
-
-
+Добавьте widthсвойство ко всей карточке и установите для него абсолютное значение 245 пикселей. Используйте fullCardкласс для выбора элемента.
 
 
 

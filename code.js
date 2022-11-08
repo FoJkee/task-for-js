@@ -1,6 +1,5 @@
 /*
-Создайте полосы, изменив repeating-linear-gradient()угол градиента на 45deg, затем установите первые две точки цвета на yellow, и, наконец, вторые две точки цвета на black.
-
+Используя URL-адрес https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png, задайте backgroundвсю страницу с помощью bodyселектора.
 
 
 

@@ -1,8 +1,7 @@
 /*
 
 
-Camper Cat устраивает турнир по Mortal Kombat и хочет узнать у своих конкурентов, какая дата подходит лучше всего. Добавьте inputтег с typeатрибутом date, idатрибутом pickdateи nameатрибутом date.
-
+Результаты опроса Camper Cat по Mortal Kombat готовы! Оберните timeтег вокруг текста Thursday, September 15<sup>th</sup>и добавьте datetimeк нему атрибут со значением 2016-09-15.
 
 
 

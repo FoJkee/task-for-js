@@ -1,14 +1,5 @@
-// The global variable
-const s = [23, 65, 98, 5];
+const filteredList = watchList
+    .filter((film) => film.imdbRating >= 8.0)
+    .map((film) => ({ title: film['Title'], rating: film['imdbRating'] }));
 
-Array.prototype.myMap = function (callback) {
-    const newArray = [];
-    for (let i = 0; i < this.length; i++) {
-        newArray.push(callback(this[i]));
-    }
-    return newArray;
-};
-
-const new_s = s.myMap(function (item) {
-    return item * 2;
-});
+console.log(filteredList);

@@ -1,9 +1,6 @@
 /*
 
-Добавьте свойство CSS flex-directionк обоим элементам headerи footerи задайте для него значение row.
-
-
-
+Добавьте свойство CSS flex-directionв .profile-nameэлемент заголовка и установите значение column.
 
 
 */

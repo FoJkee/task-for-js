@@ -1,7 +1,6 @@
 /*
 
-Добавьте свойство CSS flex-directionк #box-containerэлементу и присвойте ему значение row-reverse.
-
+Добавьте свойство CSS flex-directionк обоим элементам headerи footerи задайте для него значение row.
 
 
 

@@ -1,7 +1,10 @@
 /*
 
-Добавьте свойство CSS display: flexко всем следующим элементам — обратите внимание, что селекторы уже настроены в CSS:
+Добавьте свойство CSS flex-directionк #box-containerэлементу и присвойте ему значение row-reverse.
 
-header, заголовки .profile-name, заголовки .follow-btn, заголовки h3и h4, footerи нижние колонтитулы .stats.
+
+
+
+
 
 */

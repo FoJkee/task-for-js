@@ -1,9 +1,6 @@
-String.prototype.toAlternatingCase = function () {
-    let letter = this.toUpperCase().split('');
-    for (let i = 0; i < letter.length; i++) {
-        if (letter[i] == this[i]) {
-            letter[i] = letter[i].toLowerCase();
-        }
-    }
-    return letter.join('');
-};
+function alternateCase(s) {
+    return s
+        .split('')
+        .map((a) => (a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()))
+        .join('');
+}

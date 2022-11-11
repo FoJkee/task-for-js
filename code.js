@@ -1,7 +1,7 @@
-function countBy(x, n) {
-    let z = [];
-    for (let i = 1; i <= n; i++) {
-        z.push(x * i);
+const sequenceSum = (begin, end, step) => {
+    let num = 0;
+    for (let i = begin; i <= end; i += step) {
+        num += i;
     }
-    return z;
-}
+    return num;
+};

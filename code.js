@@ -1,5 +1,9 @@
-function move(position, roll) {
-    if (roll <= 6) {
-        return position + roll * 2;
+String.prototype.toAlternatingCase = function () {
+    let letter = this.toUpperCase().split('');
+    for (let i = 0; i < letter.length; i++) {
+        if (letter[i] == this[i]) {
+            letter[i] = letter[i].toLowerCase();
+        }
     }
-}
+    return letter.join('');
+};

@@ -1,10 +1,14 @@
-function nonMutatingPush(original, newItem) {
-    // Only change code below this line
-    return original.concat(newItem);
-
-    // Only change code above this line
-}
-
-const first = [1, 2, 3];
-const second = [4, 5];
-nonMutatingPush(first, second);
+function getRating(watchList){
+    // Add your code below this line
+    const averageRating = watchList
+      // Use filter to find films directed by Christopher Nolan
+      .filter(film => film.Director === "Christopher Nolan")
+      // Use map to convert their ratings from strings to numbers
+      .map(film => Number(film.imdbRating))
+      // Use reduce to add together their ratings
+      .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
+    // Divide by the number of Nolan films to get the average rating
+    watchList.filter(film => film.Director === "Christopher Nolan").length;
+    // Add your code above this line
+    return averageRating;
+  }

@@ -1,7 +1,5 @@
-const sequenceSum = (begin, end, step) => {
-    let num = 0;
-    for (let i = begin; i <= end; i += step) {
-        num += i;
+function move(position, roll) {
+    if (roll <= 6) {
+        return position + roll * 2;
     }
-    return num;
-};
+}

@@ -1,4 +1,4 @@
-const grabDoll = (
+/*const grabDoll = (
     dolls //for() break continue
 ) =>
     dolls
@@ -6,3 +6,5 @@ const grabDoll = (
             (element) => element == 'Hello Kitty' || element == 'Barbie doll'
         )
         .slice(0, 3);
+
+*/

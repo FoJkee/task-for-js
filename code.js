@@ -1,4 +1,4 @@
-function sumStr(a, b) {
-    let sum = +a + +b;
-    return String(sum);
+function helloWorld() {
+    const str = 'Hello World!';
+    console.log(str);
 }

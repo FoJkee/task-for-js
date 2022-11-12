@@ -1,14 +1,3 @@
-function trueOrFalse(val) {
-    if (
-        val == 0 ||
-        val == -0 ||
-        val == '' ||
-        val == null ||
-        val == undefined ||
-        val == NaN
-    ) {
-        return 'false';
-    } else {
-        return 'true';
-    }
+function saleHotdogs(n) {
+    return n * (n < 5 ? 100 : n >= 10 ? 90 : 95);
 }

@@ -1,7 +1,8 @@
-function pickIt(arr) {
-    var odd = [],
-        even = [];
-    for (element of arr) (element % 2 ? odd : even).push(element);
-
-    return [odd, even];
-}
+const grabDoll = (
+    dolls //for() break continue
+) =>
+    dolls
+        .filter(
+            (element) => element == 'Hello Kitty' || element == 'Barbie doll'
+        )
+        .slice(0, 3);

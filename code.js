@@ -1,3 +1,6 @@
-function grow(x) {
-    return x.reduce((acc, num) => acc * num);
+function toAcronym(inp) {
+    return inp
+        .split(' ')
+        .map((elem) => elem[0].toUpperCase())
+        .join('');
 }

@@ -1,18 +1,17 @@
-/*
-
-In this Kata we are passing a number (n) into a function.
-
-Your code will determine if the number passed is even (or not).
-
-The function needs to return either a true or false.
-
-Numbers may be positive or negative, integers or floats.
-
-Floats with decimal part non equal to zero are considered UNeven for this kata.
-
-
-*/
-
-function testEven(n) {
-    return n % 2 == 0 ? true : false;
+function bmi(weight, height) {
+    let p = weight / Math.pow(height, 2);
+    switch (true) {
+        case p <= 18.5:
+            return 'Underweight';
+            break;
+        case p > 18.5 && p <= 25:
+            return 'Normal';
+            break;
+        case p > 25 && p <= 30:
+            return 'Overweight';
+            break;
+        case p > 30:
+            return 'Obese';
+            break;
+    }
 }

@@ -15,4 +15,3 @@ function bmi(weight, height) {
             break;
     }
 }
-//

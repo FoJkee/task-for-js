@@ -1,7 +1,8 @@
-function powersOfTwo(n) {
-    let array = [];
-    for (let i = 0; i <= n; i++) {
-        array.push(2 ** i);
+function firstNonConsecutive(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i + 1] - 1 !== arr[i]) {
+            return arr[i + 1];
+        }
     }
-    return array;
+    return null;
 }

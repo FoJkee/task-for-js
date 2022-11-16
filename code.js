@@ -1,21 +1,7 @@
-function greet(language) {
-    return ((hello) => hello[language] || 'Welcome')({
-        english: 'Welcome',
-        czech: 'Vitejte',
-        danish: 'Velkomst',
-        dutch: 'Welkom',
-        estonian: 'Tere tulemast',
-        finnish: 'Tervetuloa',
-        flemish: 'Welgekomen',
-        french: 'Bienvenue',
-        german: 'Willkommen',
-        irish: 'Failte',
-        italian: 'Benvenuto',
-        latvian: 'Gaidits',
-        lithuanian: 'Laukiamas',
-        polish: 'Witamy',
-        spanish: 'Bienvenido',
-        swedish: 'Valkommen',
-        welsh: 'Croeso',
-    });
+function powersOfTwo(n) {
+    let array = [];
+    for (let i = 0; i <= n; i++) {
+        array.push(2 ** i);
+    }
+    return array;
 }

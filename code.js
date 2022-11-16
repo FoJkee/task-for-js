@@ -1,8 +1,3 @@
-function firstNonConsecutive(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i + 1] - 1 !== arr[i]) {
-            return arr[i + 1];
-        }
-    }
-    return null;
+function howManySmaller(arr, n) {
+    return arr.filter((num) => num.toFixed(2) < n).length;
 }

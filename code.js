@@ -1,3 +1,5 @@
-function howManySmaller(arr, n) {
-    return arr.filter((num) => num.toFixed(2) < n).length;
+function basicOp(operation, value1, value2)
+{
+  
+return eval(value1 + operation + value2)
 }

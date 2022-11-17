@@ -1,5 +1,9 @@
-function openOrSenior(data) {
-    return data.map(([years, handicap]) =>
-        years >= 55 && handicap > 7 ? 'Senior' : 'Open'
-    );
+function getRealFloor(n) {
+    if (n <= 0) {
+        return n;
+    } else if (n > 13) {
+        return (n -= 2);
+    } else {
+        return (n -= 1);
+    }
 }

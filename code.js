@@ -1,7 +1,7 @@
-var countSheep = function (num) {
-    let str = '';
-    for (let i = 1; i <= num; i++) {
-        str += i.toString() + ` sheep...`;
+function openOrSenior(data) {
+    const num = [];
+    for (let i = 0; i < data.length; i++) {
+        num[i] = data[i][0] >= 55 && data[i][1] > 7 ? 'Senior' : 'Open';
     }
-    return str;
-};
+    return num;
+}

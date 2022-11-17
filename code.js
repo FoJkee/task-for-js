@@ -1,7 +1,5 @@
 function openOrSenior(data) {
-    let res = [];
-    for (let i = 0; i < data.length; i++) {
-        res[i] = data[i][0] >= 55 && data[i][1] > 7 ? 'Senior' : 'Open';
-    }
-    return res;
+    return data.map(([years, handicap]) =>
+        years >= 55 && handicap > 7 ? 'Senior' : 'Open'
+    );
 }

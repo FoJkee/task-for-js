@@ -7,3 +7,4 @@ function getRealFloor(n) {
         return (n -= 1);
     }
 }
+//

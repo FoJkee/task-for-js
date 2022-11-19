@@ -1,7 +1,3 @@
-function checkForFactor (base, factor) {
-    if(base % factor !== 0){
-      return false
-    } else {
-      return true
-    }
-  }
+function check(a, x) {
+    return a.includes(x);
+}

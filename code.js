@@ -1,9 +1,7 @@
-function getRealFloor(n) {
-    if (n <= 0) {
-        return n;
-    } else if (n > 13) {
-        return (n -= 2);
+function checkForFactor (base, factor) {
+    if(base % factor !== 0){
+      return false
     } else {
-        return (n -= 1);
+      return true
     }
-}
+  }

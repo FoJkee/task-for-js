@@ -5,3 +5,4 @@ function removeEveryOther(arr) {
     }
     return array;
 }
+//

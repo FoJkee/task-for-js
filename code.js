@@ -3,3 +3,4 @@ function isVow(a) {
         /[aeiou]/.test(String.fromCharCode(x)) ? String.fromCharCode(x) : x
     );
 }
+//

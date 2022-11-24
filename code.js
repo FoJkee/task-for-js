@@ -1,8 +1,13 @@
-function diffArray(arr1, arr2) {
-    return arr1
-        .concat(arr2)
-        .filter((item) => !arr1.includes(item) || !arr2.includes(item));
+function checkExam(array1, array2) {
+    let num = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] === array2[i]) {
+            num += 4;
+        } else if (array2[i] == '') {
+            num += 0;
+        } else {
+            num -= 1;
+        }
+    }
+    return num < 0 ? 0 : num;
 }
-
-diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
-//

@@ -1,3 +1,3 @@
-function nameShuffler(str) {
-    return str.split(' ').reverse().join(' ');
+function twoSort(s) {
+    return s.sort()[0].split('').join('***');
 }

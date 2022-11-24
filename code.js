@@ -1,3 +1,3 @@
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-    return Math.abs(dadYearsOld - sonYearsOld * 2);
-}
+const quarterOf = (month) => {
+    return Math.ceil(month / 3);
+};

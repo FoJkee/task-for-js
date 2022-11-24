@@ -1,3 +1,3 @@
-function square(num) {
-    return Math.pow(num, 2);
+function getChar(c) {
+    return String.fromCharCode(c);
 }

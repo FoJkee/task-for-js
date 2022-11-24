@@ -1,3 +1,4 @@
-function twoSort(s) {
-    return s.sort()[0].split('').join('***');
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    let sum = sonYearsOld * 2 - dadYearsOld;
+    return sum < 0 ? sum * -1 : sum;
 }

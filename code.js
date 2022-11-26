@@ -1,3 +1,3 @@
-function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter((item) => item === true).length;
-}
+var Ball = function (ballType) {
+    this.ballType = ballType || 'regular';
+};

@@ -1,3 +1,3 @@
-const greet = (name) => {
-    return `Hello, ${name} how are you doing today?`;
-};
+function orderOperations() {
+    return (2 + 2) * (2 + 2) * 2;
+}

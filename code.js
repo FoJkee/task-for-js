@@ -1,4 +1,3 @@
-function unusualFive() {
-    const str = ['f', 'g', 'h', 'j', 'k'];
-    return str.length;
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }

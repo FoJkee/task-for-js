@@ -1,3 +1,3 @@
-function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+function shortcut(string) {
+    return string.replace(/[aeiou]/gi, '');
 }

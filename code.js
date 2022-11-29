@@ -4,3 +4,4 @@ function findShort(s) {
         .sort((a, b) => a.length - b.length)
         .shift().length;
 }
+//

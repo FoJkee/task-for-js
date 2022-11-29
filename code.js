@@ -1,3 +1,3 @@
-function orderOperations() {
-    return (2 + 2) * (2 + 2) * 2;
+function sayHello(name) {
+    return `Hello, ${name}`;
 }

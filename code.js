@@ -1,12 +1,8 @@
-function findUniq(arr) {
-    let res = [];
-    const cod = (el) => el[0];
-    for (let num of arr) {
-        if (!res.includes(num)) {
-            res.push(num);
-        }
+function gimme(triplet) {
+    let arr = [];
+    for (let i of triplet) {
+        arr.push(i);
     }
-    return Number(
-        res.filter((el) => arr.indexOf(el) === arr.lastIndexOf(el)).join()
-    );
+    arr.sort((a, b) => a - b);
+    return triplet.indexOf(arr[1]);
 }

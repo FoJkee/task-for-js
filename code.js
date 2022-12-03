@@ -6,4 +6,3 @@ function gimme(triplet) {
     arr.sort((a, b) => a - b);
     return triplet.indexOf(arr[1]);
 }
-//

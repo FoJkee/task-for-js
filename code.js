@@ -1,7 +1,9 @@
-function findShort(s) {
-    return s
-        .split(' ')
-        .sort((a, b) => a.length - b.length)
-        .shift().length;
+function gimme(triplet) {
+    let arr = [];
+    for (let i of triplet) {
+        arr.push(i);
+    }
+    arr.sort((a, b) => a - b);
+    return triplet.indexOf(arr[1]);
 }
 //
